@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100vw;
+    height: 8vh;
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: 0px 0px 10px black;
+    position: fixed;
+    z-index: 1000;
+}
+.left{
+    background-color: aqua;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left>a{
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mid{
+    background-color: antiquewhite;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.mid>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid>a:hover{
+    color: crimson;
+    border-bottom: 2px solid crimson;
+}
+.right{
+    background-color: rgb(223, 45, 81);
+    width: 20%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.right>a>img{
+    width: 100px;
+    height: 35px;
+}
+.container{
+    /* border: 2px solid black; */
+    margin-top: 8vh;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+}
+.leftContainer{
+    width: 100%;
+    height: 100%;
+    padding: 3vmax;
+    background-color: rgba(0, 255, 255, 0.375);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.leftContainer>h1{
+    font-size: 4em;
+}
+.leftContainer>h4{
+    font-size: 2em;
+}
+.leftContainer>p{
+    margin-top: 15px;
+    font-size: 1.35em;
+    /* margin-left: 20px; */
+}
+.rightContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.375);
+    justify-content: end;
+}
+.rightContainer>img{
+    margin-right: 40px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 20px black);
+}
+button{
+    width: 20%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+button:hover{
+    background-color: rgb(249, 43, 85);
+    cursor: pointer;
+}
+/* ------------------------------ */
+#products{
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    font-size: 3vmax;
+    border-bottom: 5px solid crimson;
+    width: 30%;
+    height: 6vmax;
+    margin: 1vmax auto;
+    box-shadow: 0px 1px 5px crimson;
+}
+/* -------------------- */
+.productsContainer{
+    height: 100%;
+    width: 80vw;
+    margin: 1vmax auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.products{
+    margin-top: 2vmax;
+    padding: 0.5vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22vmax;
+    height: 31vmax;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 10px 0.5px black;
+}
+.products:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.products>img{
+    width: 20vmax;
+}
+.products>h3{
+    margin-top: 2%;
+}
+.products>h4{
+    margin-top: 0%;
+}
+/* ---------------- */
+footer{
+    margin-top: 4vmax;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    display: flex;
+}
+.leftFooter{
+    width: 20%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+}
+.leftFooter>h3{
+    font-size: x-large;
+}
+.leftFooter>p{
+    text-align: center;
+    margin-top: 1vmax;
+    font-size: larger;
+}
+.leftFooter>img{
+    width: 10vmax;
+    margin-top: 1vmax;
+}
+.midFooter{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.midFooter > h1{
+    font-size: 4vmax;
+    margin: 1.5vmax;
+}
+.midFooter > p{
+    font-size: 1.35vmax;
+    margin-bottom: 1vmax;
+}
+.rightFooter{
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightFooter > h1{
+    margin-top: 2vmax;
+    font-size: 2vmax;
+    text-decoration: underline;
+}
+.rightFooter>a{
+    margin-top: 1.5vmax;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vmax;
+}
